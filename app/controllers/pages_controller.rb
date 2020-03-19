@@ -3,8 +3,10 @@ class PagesController < ApplicationController
     require 'json'
     require 'open-uri'
 
-    url = "url de l'api mixcloud"
-    # user_serialized = open(url).read
-    # user = JSON.parse(user_serialized)
+    cloudcasts = "https://api.mixcloud.com/RadioCovid666/cloudcasts/"
+    cloudcasts_serialized = open(cloudcasts).read
+    @tracks = JSON.parse(cloudcasts_serialized)
+
+
   end
 end

@@ -1,3 +1,29 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+body {
+  background: #F95D8A;
+  font-family: 'Astloch', cursive;
+  .body-challenge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    .covid-center {
+      width: 500px;
+      height: 300px;
+      background-image: url("pate.png");
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 0 60px 0;
+    }
+    .h1n1 {
+      font-weight: 700;
+      font-size: 80px;
+      text-align: center;
+      margin: auto;
+    }
+  }
+}
