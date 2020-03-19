@@ -1,7 +1,7 @@
 <div class="info">
   <div class="info-box">
     <div class="covid-info">Covid 666</div>
-    <div class="subtitle middle">• the radio from hell to hearts •</div>
+    <div class="subtitle middle"><span class="pink">•</span> the radio from hell to hearts <span class="pink">•</span></div>
     <div class="covid-text middle">Ambiance lourde et acide, comme les marées
 noires, le lemon curd et les margaritas de minuit.
 On ne sait pas encore si les verres sont à moitié
@@ -10,7 +10,7 @@ l’eau, on arrose les plantes avec, on en fait un thé,
 on s’en gargarise en chantant et on laisse le temps
 montrer ce qu’il a sous le coude.
 Le temps de cerveau disponible explose,
-Covid 666 • the radio pirate from hell to hearts est là pour
+<span class="ast">Covid 666 • the radio pirate from hell to hearts</span> est là pour
 en attraper des morceaux. Exutoire sonore créatif
 et collaboratif, elle collecte les contributions
 de tous les petits cœurs vaillants qui, délestés
@@ -20,7 +20,15 @@ chose que de se morfondre en fixant le plafond.</div>
 on sabote cette prise d’otages.</div>
     <div class="covid-text middle">Vous pouvez envoyer votre émission,
 votre mixtape ou votre djset, à l’adresse
-radio.covid666@gmail.com avec en objet
+<%= mail_to "radio.covid666@gmail.com", "radio.covid666@gmail.com", subject: "nom de l’émission + date", body: "• lien de téléchargement
+(Wetransfer etautres potes) :
+• Titre de l’émission :
+• Durée de l’épisode (l’épisode doit faire 15min
+minimum) :
+• Concept et présentation plus que synthétique :
+• Mots clés définissant l’épisode (genre musicaux,
+sujets, etc.) :
+• Un visuel :", class: "pink" %> avec en objet
 du mail nom de l’émission + date.
 Dans le corps du mail indiquez le lien de
 téléchargement (WeTransfer ou autres potes),

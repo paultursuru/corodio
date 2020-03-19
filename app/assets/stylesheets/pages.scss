@@ -4,6 +4,13 @@
 body {
   margin: 0;
   font-family: 'Astloch', cursive;
+  .ast {
+    font-family: 'Astloch', cursive;
+    font-weight: bold;
+  }
+  .pink {
+    color: #F95D8A;
+  }
   .body-challenge {
     background: #F95D8A;
     display: flex;
@@ -40,27 +47,30 @@ body {
     background: #30FC8C;
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 100vw;
-    height: 100%;
-    padding: 30px 0;
+    height: max-content;
+    padding: 30px 0 100px 0;
     .info-box {
       width: 70%;
       display: flex;
       flex-direction: column;
-      justify-content: start;
-      align-items: normal;
+      justify-content: center;
+      align-items: center;
       .covid-info {
         font-size: 125px;
         font-weight: 700;
+        width: max-content;
+        margin: 0 25% 0 0;
       }
       .subtitle {
         font-size: 50px;
+        width: max-content;
       }
       .middle {
         margin: 20px 20px 20px 100px;
       }
       .covid-text {
+        width: 50%;
         font-size: 18px;
         font-weight: lighter;
         font-family: 'Helvetica';
@@ -69,12 +79,8 @@ body {
         font-size: 30px;
         font-family: 'Helvetica';
         font-weight: lighter;
+        width: 50%;
       }
     }
   }
 }
-
-
-
-
-
