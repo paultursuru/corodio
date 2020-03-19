@@ -42,9 +42,39 @@ body {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 100vh;
-    .text-info{
-
+    height: 100%;
+    padding: 30px 0;
+    .info-box {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: normal;
+      .covid-info {
+        font-size: 125px;
+        font-weight: 700;
+      }
+      .subtitle {
+        font-size: 50px;
+      }
+      .middle {
+        margin: 20px 20px 20px 100px;
+      }
+      .covid-text {
+        font-size: 18px;
+        font-weight: lighter;
+        font-family: 'Helvetica';
+      }
+      .mid-title {
+        font-size: 30px;
+        font-family: 'Helvetica';
+        font-weight: lighter;
+      }
     }
   }
 }
+
+
+
+
+
