@@ -86,6 +86,12 @@ body {
         flex-direction: column;
         width: 100%;
         align-items: end;
+        .covid-indent {
+          text-indent: 20px;
+        }
+        .extra-margin {
+          margin-top: 15px;
+        }
         .subtitle {
           font-size: 50px;
           width: max-content;
@@ -94,10 +100,11 @@ body {
         .middle {
         }
         .covid-text {
+          line-height: 125%;
           width: 510px;
           font-size: 18px;
           font-weight: lighter;
-          font-family: 'Helvetica';
+          font-family: 'Helvetica', 'Arial', sans-serif;
           .check-list-covid {
             margin: 0;
           }
