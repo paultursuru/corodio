@@ -152,12 +152,15 @@ body {
       justify-content: center;
       align-items: center;
       margin: 30px;
-      border: solid 10px #30FC8C;
+      border: solid 1px black;
       cursor: pointer;
+      background-color: #30FC8C;
+      padding:10px;
       .track-card {
         width: 250px;
         height: 250px;
         filter: grayscale(0.6);
+        background-size: contain;
       }
       &:hover {
         .track-card {

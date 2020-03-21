@@ -6,11 +6,7 @@ class PagesController < ApplicationController
     cloudcasts = "https://api.mixcloud.com/RadioCovid666/cloudcasts/"
     cloudcasts_serialized = open(cloudcasts).read
     @tracks = JSON.parse(cloudcasts_serialized)
-
-
   end
 
-  def info
-
-  end
+  def info; end
 end
