@@ -4,6 +4,7 @@
 body {
   margin: 0;
   font-family: 'Astloch', cursive;
+  background: #F95D8A;
   .ast {
     font-family: 'Astloch', cursive;
   }
@@ -12,6 +13,9 @@ body {
   }
   .pink {
     color: #F95D8A;
+  }
+  .pink-bg {
+    background: #F95D8A;
   }
   .green {
     color: #30FC8C;
@@ -133,6 +137,50 @@ body {
           &:hover {
             text-decoration: none;
           }
+        }
+      }
+    }
+  }
+  .tracks-archive {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+    .track-block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 30px;
+      border: solid 10px #30FC8C;
+      cursor: pointer;
+      .track-card {
+        width: 250px;
+        height: 250px;
+        filter: grayscale(0.6);
+      }
+      &:hover {
+        .track-card {
+          filter: grayscale(0);
+          transition: all 0.5s ease;
+        }
+      }
+      .track-info {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 250px;
+        width: 250px;
+        position: absolute;
+        .track-name, .track-duration {
+          text-shadow: 0 0 4px black;
+        }
+        .track-name {
+          font-size: 30px;
+        }
+        .track-duration {
+          font-size: 20px;
         }
       }
     }
