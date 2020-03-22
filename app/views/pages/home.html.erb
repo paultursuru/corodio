@@ -2,10 +2,10 @@
   <%= link_to "info", info_path, class: "green bold" %>
 </div>
 <div class="body-challenge green">
-  <%= link_to info_path do  %>
-    <div class="covid-center">
+  <%#= link_to root_path do  %>
+    <div class="covid-center" data-mixcloud-play-button="https://www.mixcloud.com/RadioCovid666/">
     </div>
-  <% end %>
+  <%# end %>
 </div>
 <div class="tracks-archive pink-bg">
   <% @tracks["data"].each do |t| %>
@@ -13,10 +13,10 @@
       <div class="track-card" style="background-image: url(<%=t["pictures"]["320wx320h"]%>)">
       </div>
       <div class="track-info">
-        <div class="track-name bold pink">
+        <div class="track-name bold">
           <%= t["name"] %>
         </div>
-        <div class="track-duration bold green">
+        <div class="track-duration bold">
           <%= (t["audio_length"].to_i)/60 %> min
         </div>
       </div>

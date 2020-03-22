@@ -64,6 +64,7 @@ body {
       transform: rotate(180deg);
     }
     .covid-center {
+      cursor: pointer;
       width: 780px;
       height: 500px;
       background-image: url("covid666.png");
@@ -154,18 +155,24 @@ body {
       margin: 30px;
       border: solid 1px black;
       cursor: pointer;
-      background-color: #30FC8C;
-      padding:10px;
+      // background-color: #30FC8C;
+      // padding:10px;
       .track-card {
         width: 250px;
         height: 250px;
-        filter: grayscale(0.6);
+        filter: grayscale(1);
         background-size: contain;
+        transition: all 0.5s ease;
       }
       &:hover {
         .track-card {
           filter: grayscale(0);
           transition: all 0.5s ease;
+        }
+        .track-name, .track-duration {
+          color: #30FC8C;
+          transition: all 0.5s ease;
+          text-shadow: 0 0 4px black;
         }
       }
       .track-info {
@@ -176,8 +183,9 @@ body {
         height: 250px;
         width: 250px;
         position: absolute;
+        color: transparent;
         .track-name, .track-duration {
-          text-shadow: 0 0 4px black;
+          transition: all 0.5s ease;
         }
         .track-name {
           font-size: 30px;
