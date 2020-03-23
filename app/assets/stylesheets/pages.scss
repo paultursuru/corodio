@@ -227,7 +227,20 @@ body {
         height: 230px;
       }
     }
+    .info .info-box .covid-info {
+      /* text-align: left; */
+      text-align: center;
+    }
+
+    .info .info-box {
+      /* width: 62%; */
+      width: 85%;
+    }
   }
+
+
+
+
 }
 
 @media (max-width: 420px) {
@@ -266,6 +279,38 @@ body {
     .more-info-on-covid {
       /* font-size: 25px; */
       font-size: 20px;
+    }
+
+
+  .info .info-box {
+    .covid-info {
+      /* font-size: 175px; */
+      font-size: 75px;
+    }
+    .block-right .subtitle {
+      /* font-size: 50px; */
+      font-size: 25px;
+    }
+    .block-right .covid-text {
+      /* width: 510px; */
+      /* font-size: 18px; */
+      width: 254px;
+      font-size: 11px;
+    }
+    .block-mid-left {
+      /* width: 100%; */
+      /* margin: 30px 25%; */
+      width: 220px;
+      margin: 30px 10% 30px 20%;
+      .mid-title {
+          /* font-size: 30px; */
+          /* width: max-content; */
+          /* margin: 0 20% 0 0; */
+          font-size: 16px;
+          width: 220px;
+          margin: 0;
+        }
+      }
     }
   }
 }
