@@ -205,5 +205,68 @@ body {
   }
 }
 
+@media (max-width: 800px) {
 
+  body {
+    .body-challenge {
+      /* height: calc(100vh - 65px); */
+      height: 600px;
+      .covid-center {
+        /* width: 780px; */
+        /* height: 500px; */
+        width: 80%;
+        max-height: 400px;
+        height: 100%;
+      }
+    }
+    .tracks-archive .track-block {
+      .track-card, .track-info {
+        /* width: 250px; */
+        /* height: 250px; */
+        width: 230px;
+        height: 230px;
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  body {
+    .body-challenge {
+    /* height: 600px; */
+    height: 215px;
+    margin: 20px 0;
+    .covid-center {
+      /* width: 80%; */
+      width: 90%;
+    }
+  }
+
+  .tracks-archive {
+    /* width: 80%; */
+    width: 90%;
+    padding: 20px 0;
+    .track-block {
+      margin: 10px;
+      .track-card {
+        background-size: cover;
+      }
+      .track-card, .track-info {
+        /* width: 230px; */
+        /* height: 230px; */
+        width: 250px;
+        height: 100px;
+        .track-name {
+          /* font-size: 30px; */
+          font-size: 15px;
+        }
+      }
+    }
+  }
+    .more-info-on-covid {
+      /* font-size: 25px; */
+      font-size: 20px;
+    }
+  }
+}
 
