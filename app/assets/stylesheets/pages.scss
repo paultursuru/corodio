@@ -1,6 +1,12 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+@font-face {
+  font-family: 'Alright';
+  src: font-url('AlrightSans-Thin-v3.ttf') format('truetype');
+}
+
+
 body {
   margin: 0;
   font-family: 'Astloch', cursive;
@@ -35,8 +41,8 @@ body {
     padding: 20px 0;
     background: #F95D8A;
     text-align: center;
+    font-size: 25px;
     .green {
-      font-size: 20px;
     }
   }
   .back {
@@ -109,7 +115,7 @@ body {
           width: 510px;
           font-size: 18px;
           font-weight: lighter;
-          font-family: 'Helvetica', 'Arial', sans-serif;
+          font-family: 'Alright', sans-serif;
           .check-list-covid {
             margin: 0;
           }
@@ -120,7 +126,7 @@ body {
         margin: 30px 25%;
         .mid-title {
           font-size: 30px;
-          font-family: 'Helvetica';
+          font-family: 'Alright', sans-serif;
           font-weight: lighter;
           width: max-content;
           margin: 0 20% 0 0;
