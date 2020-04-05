@@ -43,9 +43,13 @@ body {
     background-image: url("coulurecool.png") !important;
     background-color: black !important;
     background-size:cover;
-    background-position: top;
+    background-position: bottom;
+    // animation-duration: 30s;
+    // animation-name: slidebg;
+    transition: all 300s cubic-bezier(1,.41,.79,1.36);
     &:hover {
-      transform: translate()
+      background-position: top;
+      transition: all 300s cubic-bezier(1,.41,.79,1.36);
     }
   }
   .transparent-bg {
@@ -217,7 +221,15 @@ body {
     }
   }
 }
+// @keyframes slidebg {
+//   from {
+//     background-position: bottom;
+//   }
 
+//   to {
+//     background-position: top;
+//   }
+// }
 @media (max-width: 800px) {
 
   body {
