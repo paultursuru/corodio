@@ -1,12 +1,12 @@
 <div class="padd-20
-            <% if Time.now.hour >= 18 || Time.now.hour <= 6 %>
+            <% if Time.now.hour >= 16 || Time.now.hour <= 6 %>
               coulure
             <% else %>
               pink-bg
             <% end %>
             ">
   <div class="more-info-on-covid
-            <% if Time.now.hour >= 18 || Time.now.hour <= 6 %>
+            <% if Time.now.hour >= 16 || Time.now.hour <= 6 %>
               transparent-bg
             <% else %>
               pink-bg
@@ -15,7 +15,7 @@
     <%= link_to "info", info_path, class: "green bold" %>
   </div>
   <div class="body-challenge
-              <% if Time.now.hour >= 18 || Time.now.hour <= 6 %>
+              <% if Time.now.hour >= 16 || Time.now.hour <= 6 %>
                 transparent-bg
               <% else %>
                 pink-bg
@@ -27,7 +27,7 @@
     <%# end %>
   </div>
   <div class="tracks-archive
-              <% if Time.now.hour >= 18 || Time.now.hour <= 6 %>
+              <% if Time.now.hour >= 16 || Time.now.hour <= 6 %>
                 transparent-bg
               <% else %>
                pink-bg
