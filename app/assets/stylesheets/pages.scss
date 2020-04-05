@@ -21,7 +21,7 @@ body {
     color: #F95D8A;
   }
   .pink-bg {
-    background: #F95D8A;
+    background: #F95D8A !important;
   }
   .green {
     color: #30FC8C;
@@ -34,6 +34,17 @@ body {
     &:hover {
       text-decoration: none;
     }
+  }
+  .padd-20 {
+    padding: 0 15%;
+    background: black;
+  }
+  .coulure {
+    background-image: url("coulurecool.png") !important;
+    background-color: black !important;
+  }
+  .transparent-bg {
+    background-color: transparent !important;
   }
   .more-info-on-covid {
     width: 100%;
@@ -152,8 +163,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
     .track-block {
       display: flex;
       justify-content: center;

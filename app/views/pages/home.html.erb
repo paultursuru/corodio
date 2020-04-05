@@ -1,29 +1,52 @@
-<div class="more-info-on-covid">
-  <%= link_to "info", info_path, class: "green bold" %>
-</div>
-<div class="body-challenge green">
-  <%#= link_to root_path do  %>
-    <div class="covid-center" data-mixcloud-play-button="https://www.mixcloud.com/RadioCovid666/">
-    </div>
-  <%# end %>
-</div>
-<div class="tracks-archive pink-bg">
-  <% @tracks["data"].each do |t| %>
-    <div class="track-block" data-mixcloud-play-button="<%=t["url"]%>">
-      <div class="track-card" style="background-image: url(<%=t["pictures"]["320wx320h"]%>)">
+<div class="padd-20
+            <% if Time.now.hour >= 18 || Time.now.hour <= 6 %>
+              coulure
+            <% else %>
+              pink-bg
+            <% end %>
+            ">
+  <div class="more-info-on-covid
+            <% if Time.now.hour >= 18 || Time.now.hour <= 6 %>
+              transparent-bg
+            <% end %>
+            ">
+    <%= link_to "info", info_path, class: "green bold" %>
+  </div>
+  <div class="body-challenge
+              <% if Time.now.hour >= 18 || Time.now.hour <= 6 %>
+                transparent-bg
+              <% end %>
+              ">
+    <%#= link_to root_path do  %>
+      <div class="covid-center" data-mixcloud-play-button="https://www.mixcloud.com/RadioCovid666/">
       </div>
-      <div class="track-info">
-        <div class="track-name bold">
-          <%= t["name"] %>
+    <%# end %>
+  </div>
+  <div class="tracks-archive pink-bg
+              <% if Time.now.hour >= 18 || Time.now.hour <= 6 %>
+                transparent-bg
+              <% end %>
+              ">
+    <% @tracks["data"].each do |t| %>
+      <div class="track-block" data-mixcloud-play-button="<%=t["url"]%>">
+        <div class="track-card" style="background-image: url(<%=t["pictures"]["320wx320h"]%>)">
         </div>
-        <div class="track-duration bold">
-          <%= (t["audio_length"].to_i)/60 %> min
+        <div class="track-info">
+          <div class="track-name bold">
+            <%= t["name"] %>
+          </div>
+          <div class="track-duration bold">
+            <%= (t["audio_length"].to_i)/60 %> min
+          </div>
         </div>
       </div>
-    </div>
-  <% end %>
+    <% end %>
+  </div>
 </div>
+
 
 <script src="//widget.mixcloud.com/media/js/footerWidgetApi.js" async>
 {"feed": "/RadioCovid666/"}
 </script>
+
+
