@@ -1,25 +1,22 @@
 <div class="padd-20
-            <% if Time.now.hour >= 16 || Time.now.hour <= 6 %>
+            <%# if Time.now.hour >= 16 || Time.now.hour <= 6 %>
               coulure
-            <% else %>
-              pink-bg
-            <% end %>
+            <%# else %>
+            <%# end %>
             ">
   <div class="more-info-on-covid
-            <% if Time.now.hour >= 16 || Time.now.hour <= 6 %>
+            <%# if Time.now.hour >= 16 || Time.now.hour <= 6 %>
               transparent-bg
-            <% else %>
-              pink-bg
-            <% end %>
+            <%# else %>
+            <%# end %>
             ">
     <%= link_to "info", info_path, class: "green bold" %>
   </div>
   <div class="body-challenge
-              <% if Time.now.hour >= 16 || Time.now.hour <= 6 %>
+              <%# if Time.now.hour >= 16 || Time.now.hour <= 6 %>
                 transparent-bg
-              <% else %>
-                pink-bg
-              <% end %>
+              <%# else %>
+              <%# end %>
               ">
     <%#= link_to root_path do  %>
       <div class="covid-center" data-mixcloud-play-button="https://www.mixcloud.com/RadioCovid666/">
@@ -27,11 +24,10 @@
     <%# end %>
   </div>
   <div class="tracks-archive
-              <% if Time.now.hour >= 16 || Time.now.hour <= 6 %>
+              <%# if Time.now.hour >= 16 || Time.now.hour <= 6 %>
                 transparent-bg
-              <% else %>
-               pink-bg
-              <% end %>
+              <%# else %>
+              <%# end %>
               ">
     <% @tracks["data"].each do |t| %>
       <div class="track-block" data-mixcloud-play-button="<%=t["url"]%>">
@@ -54,5 +50,15 @@
 <script src="//widget.mixcloud.com/media/js/footerWidgetApi.js" async>
 {"feed": "/RadioCovid666/"}
 </script>
+<script>
+  // window.onload = function (new_coulure) {
+  //   const covidBody = document.getElementsByClassName("mixcloud-footer-widget-body-wrapper");
+  //   console.log(covidBody);
+  //   let coulure = document.createElement('div');
+  //   coulure.className = "coulure_moving";
+  //   console.log("ok ok");
+  //   covidBody.appendChild(new_coulure);
+  // }
 
+</script>
 
