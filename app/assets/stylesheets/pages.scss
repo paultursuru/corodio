@@ -45,17 +45,17 @@ body {
     background: black;
   }
   .coulure {
-    background-image: url("coulurecool.png") !important;
+    background-image: url("flame.gif") !important;
     background-color: black !important;
     background-size:cover;
     background-position: bottom;
     // animation-duration: 300s;
     // animation-name: slidebg;
-    transition: all 300s cubic-bezier(1,.41,.79,1.36);
-    &:hover {
-      background-position: top;
-      transition: all 300s cubic-bezier(1,.41,.79,1.36);
-    }
+    // transition: all 300s cubic-bezier(1,.41,.79,1.36);
+    // &:hover {
+    //   background-position: top;
+    //   transition: all 300s cubic-bezier(1,.41,.79,1.36);
+    // }
   }
   .transparent-bg {
     background-color: transparent !important;
@@ -96,7 +96,7 @@ body {
       cursor: pointer;
       width: 780px;
       height: 500px;
-      background-image: url("covid666.png");
+      background-image: url("covid666-flames.png");
       background-size: contain;
       background-repeat: no-repeat;
     }

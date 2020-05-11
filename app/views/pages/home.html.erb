@@ -10,7 +10,8 @@
             <%# else %>
             <%# end %>
             ">
-    <%= link_to "info", info_path, class: "green bold" %>
+    <%#= link_to "info", info_path, class: "green bold" %>
+    <%= link_to "Covid-666 will be back soon", "https://www.mixcloud.com/RadioCovid666/", class: "green bold" %>
   </div>
   <div class="body-challenge
               <%# if Time.now.hour >= 16 || Time.now.hour <= 6 %>
@@ -29,20 +30,20 @@
               <%# else %>
               <%# end %>
               ">
-    <% @tracks["data"].each do |t| %>
-      <div class="track-block" data-mixcloud-play-button="<%=t["url"]%>">
-        <div class="track-card" style="background-image: url(<%=t["pictures"]["320wx320h"]%>)">
+    <%# @tracks["data"].each do |t| %>
+      <!-- <div class="track-block" data-mixcloud-play-button="<%#=t["url"]%>">
+        <div class="track-card" style="background-image: url(<%#=t["pictures"]["320wx320h"]%>)">
         </div>
         <div class="track-info">
           <div class="track-name bold">
-            <%= t["name"] %>
+            <%#= t["name"] %>
           </div>
           <div class="track-duration bold">
-            <%= (t["audio_length"].to_i)/60 %> min
+            <%#= (t["audio_length"].to_i)/60 %> min
           </div>
         </div>
-      </div>
-    <% end %>
+      </div> -->
+    <%# end %>
   </div>
 </div>
 
