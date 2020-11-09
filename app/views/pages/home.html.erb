@@ -1,34 +1,14 @@
-<div class="padd-20
-            <% if Time.now.hour >= 16 || Time.now.hour <= 6 %>
-              coulure
-            <% else %>
-            <% end %>
-            ">
-  <div class="more-info-on-covid
-            <% if Time.now.hour >= 16 || Time.now.hour <= 6 %>
-              transparent-bg
-            <% else %>
-            <% end %>
-            ">
+<div class="padd-20 coulure">
+  <div class="more-info-on-covid transparent-bg">
     <%= link_to "info", info_path, class: "green bold" %>
   </div>
-  <div class="body-challenge
-              <% if Time.now.hour >= 16 || Time.now.hour <= 6 %>
-                transparent-bg
-              <% else %>
-              <% end %>
-              ">
+  <div class="body-challenge transparent-bg">
     <%= link_to root_path do  %>
       <div class="covid-center" data-mixcloud-play-button="https://www.mixcloud.com/RadioCovid666/">
       </div>
     <% end %>
   </div>
-  <div class="tracks-archive
-              <% if Time.now.hour >= 16 || Time.now.hour <= 6 %>
-                transparent-bg
-              <% else %>
-              <% end %>
-              ">
+  <div class="tracks-archive transparent-bg">
     <% @tracks["data"].each do |t| %>
       <div class="track-block" data-mixcloud-play-button="<%=t["key"]%>">
         <div class="track-card" style="background-image: url(<%=t["pictures"]["320wx320h"]%>)">
